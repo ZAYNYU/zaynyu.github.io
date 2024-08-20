@@ -7,15 +7,43 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
-  <!-- Smooth Scrolling -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <style>
-    html {
-      scroll-behavior: smooth;
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
     }
+
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+
+    .navbar-brand, .navbar-nav li a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2rem;
+    }
+
     .section {
       padding: 50px 0;
+    }
+
+    /* Adjust spacing around the photo and name */
+    .col-md-4 {
+      margin-top: 20px;
+    }
+
+    /* Adjust the spacing between the image and text */
+    .col-md-8 img {
+      margin-top: 10px;
+      max-width: 250px; /* Slightly reduce the image size */
+      height: auto;
     }
   </style>
 </head>
@@ -48,7 +76,7 @@
     <div class="container">
         <div id="home" class="section row">
             <div class="col-md-8">
-                <img class="img-responsive" src="photo.jpg" alt="Your Photo" style="max-width: 300px; height: auto;"><br>
+                <img class="img-responsive" src="photo.jpg" alt="Your Photo"><br>
                 <div style="margin-top:3%; text-align:justify;">
 					<h1>Welcome to My Portfolio</h1>
 			                <p> I'm a Master's Student in Biostatistics at the University of Washington. I have a first-class Bachelor's degree in statistics from the University of Nottingham, UK.</p>
@@ -59,7 +87,7 @@
                 </div>
             </div> 
             <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Zihang Yu</b></div><br>
+                <div style="font-family: 'Lora', serif; font-size: 32px; margin-top: 0;"><b>Zihang Yu</b></div><br>
                 <p><b><a href="mailto:zihangyu@uw.edu">zihangyu@uw.edu</a></b><br>
                 <p>Biostatistics Master's Student<br>
 		        <p>University of Washington</p>
