@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
-
-We are borrowing this template for use with the capstone program
--->
-
 <html lang="en">
+<html>
 <head>
-  <title>Zihang Yu</title> <!-- EDIT YOUR NAME HERE -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title>Zihang Yu, UW Biostatistics</title>
+	<script>
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+
+	      var hash = this.hash;
+
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 500, function(){
+	        window.location.hash = hash;
+	      });
+	    }
+	  });
+	});
+	</script>
 </head>
 <body>
 
@@ -45,34 +51,24 @@ We are borrowing this template for use with the capstone program
 </nav>
   
   <!-- Page Content -->
-    <div class="container">
+<div class="container" id="about">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="your-photo.jpg" alt="Zihang Yu" class="img-responsive" />
+      <div class="contact-info">
+        <p>Email: <a href="mailto:zihangyu@uw.edu">zihangyu@uw.edu</a></p>
+        <p>Phone: (Your phone number)</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/zihang-yu-572793292">Zihang Yu</a></p>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h1>Zihang Yu</h1>
+      <p>I'm a Master's Student in Biostatistics at the University of Washington. I have a first-class Bachelor's degree in Statistics from the University of Nottingham, UK.</p>
+      <p>I'm interested in clinical trials, particularly those with adaptive designs...</p>
+    </div>
+  </div>
+</div>
 
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image (UPDATE YOUR OWN PHOTO TO THE REPO!) -->
-                <img class="img-responsive" src="photo.jpg" alt=""><br>
-                
-		<!-- UPDATE THE TEXT BELOW HERE WITH YOUR OWN TEXT -->
-                <div style="margin-top:3%; text-align:justify;">
-					<!--
-					This is where you would introduce yourself. You might include links to things <a href="//google.com">RANDOM LINK TO GOOGLE</a>. You might have links to outside websites or things like your resume.
-					
-					You might also talk about groups that you have worked with (and perhaps link to them), and/or put your interests here!
-					
-					<p> The goal is to give potential employers some idea of who you are (to convince them that you are skilled, professional, and personable!) 
-					-->
-			
-			                <p> I'm a Master's Student in Biostatistics at the University of Washington. I have a first-class Bachelor's degree in statistics from the University of Nottingham, UK.
-					
-					<p> I'm interested in clinical trials, particularly those with adaptive designs. I enjoy coding, problem-solving, and working collaboratively as part of a team. Always open to new challenges, I aspire to contribute to global health equity and enhance population-level well-being. </p>
-
-					<p> For more information about me, please check out my <a href="resume.pdf">resume</a>, or reach out via email or <a href="https://www.linkedin.com/in/zihang-yu-572793292">linkedin</a>.
-					
-                </div>
-            </div> 
 
             <!-- Contact Info on the Sidebar -->
             <div class="col-md-4">
