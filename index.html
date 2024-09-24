@@ -39,20 +39,6 @@
   padding: 50px 0;
 }
 
-/* Adjust spacing around the photo and name */
-.col-md-4 {
-  margin-top: 0; /* Remove the margin to bring the name closer to the photo */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Adjust the spacing between the image and text */
-.col-md-8 img {
-  margin-top: 10px;
-  max-width: 350px; /* Increase the image size */
-  height: auto;
-}
   </style>
 </head>
 <body>
@@ -68,9 +54,10 @@
 			<span class="icon-bar"></span>
 		  </button>
 		</div>
+		  
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-			  <li><a href="#home">About</a></li>
+			  <li><a href="#home">Home</a></li>
 			  <li><a href="#experience">Work Experience</a></li>
 			  <li><a href="#research">Research</a></li>
 			  <li><a href="#projects">Projects</a></li>
@@ -79,12 +66,36 @@
 		</div>
 	  </div>
 	</nav>
-  
+	
+   <!-- Contact Info on the Sidebar -->
+            <div class="col-md-4">
+                <div style="font-family: 'Lora', serif; font-size: 32px; margin-top: 0;"><b>Zihang Yu</b></div><br>
+                <p><b><a href="mailto:zihangyu@uw.edu">zihangyu@uw.edu</a></b><br>
+                <p>Biostatistics Master's Student<br>
+		        <p>University of Washington</p>
+            </div>
+
+	    <!-- Links on the Sidebar -->
+            <div class="col-md-4" style="margin-top:10px;">
+              <dd><a href="https://www.linkedin.com/in/zihang-yu-572793292"> LinkedIn</a></dd>
+            </div>
+            <div class="col-md-4" style="margin-top:10px;">
+              <dd><a href="https://github.com/ZAYNYU"> GitHub</a></dd>
+            </div>
+        </div>
+
+	
   <!-- Page Content -->
     <div class="container">
-        <div id="home" class="section row">
+	    
+        <div class="row">
+
+            <!-- Entries Column -->    
+       	    <div id="home" class="section row">
             <div class="col-md-8">
-                <img class="img-responsive" src="photo.jpg" alt="Your Photo"><br>
+		    
+                <img class="img-responsive" src="photo.jpg" alt=""><br>
+		    
                 <div style="margin-top:3%; text-align:justify;">
 					<h1>About</h1>
 			                <p> I'm a Master's Student in Biostatistics at the University of Washington. I have a first-class Bachelor's degree in statistics from the University of Nottingham, UK.</p>
@@ -96,19 +107,6 @@
 					<p> For more information about me, please check out my <a href="resume.pdf">resume</a>, or reach out via email or <a href="https://www.linkedin.com/in/zihang-yu-572793292">LinkedIn</a>.</p>
                 </div>
             </div> 
-            <div class="col-md-4">
-                <div style="font-family: 'Lora', serif; font-size: 32px; margin-top: 0;"><b>Zihang Yu</b></div><br>
-                <p><b><a href="mailto:zihangyu@uw.edu">zihangyu@uw.edu</a></b><br>
-                <p>Biostatistics Master's Student<br>
-		        <p>University of Washington</p>
-            </div>
-            <div class="col-md-4" style="margin-top:10px;">
-              <dd><a href="https://www.linkedin.com/in/zihang-yu-572793292"> LinkedIn</a></dd>
-            </div>
-            <div class="col-md-4" style="margin-top:10px;">
-              <dd><a href="https://github.com/ZAYNYU"> GitHub</a></dd>
-            </div>
-        </div>
 
 	    <div id="experience" class="section row">
             <div class="col-md-8">
@@ -158,10 +156,9 @@
 
 	    
 	    
-	    
-        <div id="projects" class="section row">
-            <div class="col-md-8">
-                <h2>Projects</h2>
+	       <!-- Projects -->
+        <div class="col-md-8" style ="height: 100vh;">
+                <h2 id="projects">Projects</h2>
 		        <strong>Mathematical Group Projects Statistical Data Analysis and Modelling Stream</strong><br>
 		        Supervisors: Prof. David Sirl, Prof. Frank Ball, and Prof. Theodore Kypraios, University of Nottingham, UK <br>
                 <ul>
